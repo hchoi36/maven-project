@@ -1,4 +1,4 @@
 Automatic Build triggered by this change from Choi
 This trigger should auto build by the webhook 
 
-This trigger will cause docker commands to run and push our webapp
+This trigger will cause docker commands to run and push our webapp:v7
