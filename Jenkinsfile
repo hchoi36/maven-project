@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/hchoi36/maven-project.git'
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hchoi36/maven-project.git']]])
         
             }
         }  
